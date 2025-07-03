@@ -13,7 +13,7 @@ class Client:
     ----------
     base_uri : str
         Base URI of the VOICEVOX Engine"""
-    def __init__(self, base_uri: str = "http://localhost:50021") -> None:
+    def __init__(self, base_uri: str = "http://localhost:10101") -> None:
         self.http = HTTPClient(base_uri)
 
     async def __aenter__(self) -> "Client":
